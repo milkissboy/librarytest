@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
 import com.poisionrose.poisoncore.CoreBase
+import com.poisionrose.poisoncore.getCategory
 
 class MainActivity : AppCompatActivity() {
 
@@ -22,7 +23,9 @@ class MainActivity : AppCompatActivity() {
         }
 
         Log.e("test", "start test")
-        Log.e("test", "start core ${CoreBase.initialize()}")
+        Log.e("test", "core ${CoreBase.initialize()}")
+        Log.e("test", "getName ${CoreBase().getName()}")
+        Log.e("test", "extension ${getCategory()}")
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
